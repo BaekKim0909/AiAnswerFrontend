@@ -75,7 +75,7 @@ const doMenuClick = (path: string) => {
     <a-col flex="200px">
       <a-dropdown position="bottom" trigger="hover">
         <a-avatar :size="55">
-          <img alt="avatar" :src="userStore.userInfo?.userAvatar" />
+          <img alt="avatar" :src="userStore.userInfo?.userAvatar" :style="{ objectFit: 'cover' }" />
         </a-avatar>
         <template #content>
           <a-doption @click="toLoginView">登录</a-doption>

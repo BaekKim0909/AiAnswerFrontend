@@ -4,3 +4,11 @@ export type UserQueryRequest = {
   pageIndex?: number
   pageSize?: number
 }
+export type UserVO = {
+  createTime?: string
+  userAccount?: string
+  userAvatar?: string
+  userName?: string
+  userProfile?: string
+  userRole?: string
+}
